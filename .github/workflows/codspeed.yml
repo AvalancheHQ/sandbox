@@ -29,6 +29,9 @@ jobs:
           
       - name: Run benchmarks
         uses: CodSpeedHQ/action@v4
+        env:
+          CODSPEED_LOG: debug
+          CODSPEED_GO_PKG_VERSION: main
         with:
           mode: walltime
           run: |
